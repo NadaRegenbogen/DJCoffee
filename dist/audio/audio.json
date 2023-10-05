@@ -1,0 +1,26 @@
+[
+    {
+        "track": "Ice Latte",
+        "artist": "DJ Ćoffee",
+        "cover": "./images/kafazasajt2.jpg",
+        "source": "./audio/filip_audio_1.mp3"
+    },
+    {
+        "track": "Cortado",
+        "artist": "DJ Ćoffee",
+        "cover": "./images/kafazasajt1.jpg",
+        "source": "./audio/filip_audio_2.mp3"
+    },
+    {
+        "track": "Black no sugar",
+        "artist": "DJ Ćoffee",
+        "cover": "./images/kafazasajt3.jpg",
+        "source": "./audio/filip_audio_3.mp3"
+    },
+    {
+        "track": "Freddo Capuccino",
+        "artist": "DJ Ćoffee",
+        "cover": "./images/kafazasajt4.jpg",
+        "source": "./audio/filip_audio_4.mp3"
+    }
+]
