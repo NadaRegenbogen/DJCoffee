@@ -1,0 +1,163 @@
+
+.title{
+    background-color: rgb(201, 203, 163);
+    color: rgb(114, 61, 70);
+    margin-bottom: 0rem;
+}
+
+.audio-player {
+    background-color: rgb(201, 203, 163);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        grid-template-columns: auto 1fr auto;
+        gap: 0.3125rem;
+        grid-template-areas:
+                            "artwork artwork artwork"
+                             "info info info"
+                             "controls timeline time"
+                             "playlist playlist playlist";
+    }
+
+    @media screen and (min-width: 769px) {
+        width: 100%;
+        grid-template-columns: auto 1fr auto;
+        gap: 0.5rem;
+        grid-template-areas:
+                            "artwork artwork artwork"
+                             "info info info"
+                             "controls timeline time"
+                             "playlist playlist playlist";
+    }
+}
+
+.artwork {
+    grid-area: artwork;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    border: solid 0.25rem white;
+}
+
+h1{color: rgb(114, 61, 70);}
+
+.controls {
+    grid-area: controls;
+    padding-left: 2rem;
+}
+
+.info {
+   grid-area: info;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+    & .artist {
+        font-size: 1rem;
+        font-weight: bold;
+        color: rgb(114, 61, 70);
+    }
+
+    & .track-name {
+        font-size: 2rem;
+        color: rgb(114, 61, 70);
+        
+    }
+}
+
+.playlist {
+    grid-area: playlist;
+    background-color: rgb(114, 61, 70);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem ;
+}
+
+.timeline {
+    grid-area: timeline;
+    height: 1.5rem;
+    border: none;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+
+
+    & .progress-line {
+        background-color: rgb(114, 61, 70);
+        height: 1.5rem;
+        width: 0;
+    }
+
+    & .timeline-overlay {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-color: rgb(114, 61, 70);
+        opacity: 0;
+    }
+
+}
+
+.time {
+    grid-area: time;
+    padding: 0.25rem;
+    color: rgb(114, 61, 70);
+    padding-right: 2rem;
+}
+
+.track-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem;
+    align-items: center;
+    border: solid white 0.10rem;
+    padding: 0.80rem;
+   
+
+    & .artist {
+        font-size: 0.9rem;
+        font-weight: bold;
+        letter-spacing: 0.075rem;
+        margin: 0 0 0.4rem 0;
+        padding-left: 1rem;
+        color: rgb(201, 203, 163);
+    }
+
+    & .thumbnail img {
+        max-width: 3.75rem;
+        max-height: 3.75rem;
+    }
+
+    & .track-name {
+        font-size: 1rem;
+        color: white;
+        margin: 0;
+        padding-left: 1rem;
+    }
+
+    & .track-overlay {
+        position: absolute;
+        background-color: rgba(114, 61, 70, 0.5);
+        z-index: 10;
+        top: 0; left: 0; right: 0; bottom: 0;
+        opacity: 0;
+    }
+}
+
+.icon-play, .icon-pause {
+    color: white;
+    line-height: 2rem;
+}
+
+#play-pause{
+    border: none;
+    background-color: rgb(114, 61, 70);
+    width: 2rem;
+    height: 2rem;
+}

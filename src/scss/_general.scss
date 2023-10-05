@@ -1,0 +1,141 @@
+@font-face {
+    font-family: Town otf ;
+    src: url(/Jason\ Vandenberg\ -\ Town\ 10\ Display\ Bold.otf);
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Town otf';
+    margin: 0;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    background-image: url("/dist/images/for\ web\ main.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: rgb(201, 203, 163);
+
+    &img{width: 100%; max-width: 100%;}
+}
+
+
+#navbar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border: solid white 0.01rem;
+    margin: 0.55rem;
+  
+    @media screen and (max-width: 768px){
+        display: none;
+        }
+}
+
+#navbar>a{
+   
+    font-family:'Town otf';
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white; 
+    padding-right: 2rem;}
+
+#navbar>a:hover{color: rgb(201, 203, 163);}
+
+#navbar>.active{color: rgb(201, 203, 163);}
+
+#the_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+   
+    @media screen and (min-width: 769px){
+        #mobile_logo {display: none;}}
+
+    @media screen and (max-width: 768px){
+        #the_logo {display: none;}
+        #mobile_logo{margin-top: 1rem;}
+        }
+}
+
+#menu_button {   
+background-color: transparent;
+color: white;
+border: solid white 0.25rem;
+border-radius: 15px;
+font-size: 1.5rem;
+margin-top: 0;
+margin-bottom: 0;
+
+@media screen and (min-width: 769px){display: none;}
+}
+
+#mobnav{  
+    @media screen and (max-width: 768px)
+        { display: none;
+        background-color: rgb(114, 61, 70);
+        color: white;
+        opacity: 0.75;
+        position: fixed;
+        width: 100vw;
+        align-items: center;
+        }
+
+    @media screen and (min-width: 769px){display: none;}
+    
+}
+
+#mobnav>a{
+    @media screen and (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-decoration: none;}
+    @media screen and (min-width: 769px){display: none;}
+}
+
+#iks_button{
+    @media screen and (max-width: 768px){
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;}
+    @media screen and (min-width: 769px){display: none;}
+}
+
+main{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+footer{
+    background-color: rgb(114, 61, 70);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 0;
+    height: 4rem;
+
+    @media screen and (max-width: 768px){
+        p{margin-left: 1rem;}
+    }
+} 
+

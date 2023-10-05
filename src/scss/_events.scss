@@ -1,0 +1,20 @@
+#event_title {
+    width: 100%;
+    background-color: rgb(201, 203, 163);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(114, 61, 70);
+    padding-bottom: 0;
+}
+
+#event_title>h1{padding-bottom: 1rem;
+padding-top: 1rem;}
+
+form{padding: 1rem;}
+    select{
+        color: white;
+        background-color: rgb(114, 61, 70);
+    }
+    
+.placeholder>p{padding: 1rem;} 

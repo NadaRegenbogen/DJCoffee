@@ -1,0 +1,66 @@
+#contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid white 0.1rem;
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+
+    @media screen and (max-width: 768px){
+        margin-top: 1rem;
+        margin-bottom: 0;
+        padding: 0.5rem 2rem 0 2rem;
+    }
+}
+ 
+#contacts>h1{
+    font-family: 'Town otf';
+    color: white;
+    font-weight: bold;
+   
+    @media screen and (max-width: 768px){font-size: 2rem;}
+    
+    @media screen and (min-width: 769px){font-size: 3rem;}
+}
+
+#contacts>p{
+    font-family: 'Town otf';
+    padding: 1rem;
+    color: white;
+   
+    @media screen and (max-width: 768px){
+       font-size: 0.75rem;
+        padding: 0.5rem;
+        }
+    
+        @media screen and (min-width: 769px){font-size: 1.5rem;}
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+form>button{
+    background-color: rgb(114, 61, 70);
+    color: white;
+    border-radius: 15px;
+} 
+form>h1{
+    color: white;
+    @media screen and (max-width: 768px){font-size: 1rem;}
+}
+
+@media screen and (max-width: 768px){
+    label {font-size: 0.5rem;}
+     }
+
+a:hover{color: rgb(201, 203, 163);}
+
+a{
+  color: white;
+
+  @media screen and (min-width: 769px){text-decoration: none;}
+}

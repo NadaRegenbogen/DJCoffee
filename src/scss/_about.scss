@@ -1,0 +1,32 @@
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid white 0.1rem;
+    margin: 3rem;
+    padding: 2rem;
+
+    @media screen and (max-width: 768px){
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+        
+            @media screen and (max-width: 768px){font-size: 0.5rem;}
+        }
+
+
+#about>h1{
+    font-family: 'Town otf';
+    color: white;
+}
+
+#about>p{
+    font-family: 'Town otf';
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+
+    @media screen and (max-width: 768px){font-size: 0.5rem;}
+}
