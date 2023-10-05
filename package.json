@@ -1,0 +1,18 @@
+{
+  "name": "djcoffee",
+  "version": "1.0.0",
+  "main": "about.js",
+  "scripts": {
+    "live-dev": "npx concurrently \"npx tsc -w\" \"npx sass --watch --style=compressed ./src/scss/style.scss:./dist/css/style.min.css\" \"npx simplifyify -w -m -d ./src/js/app.js --outfile ./dist/js/app.bundle.js\" \"npx live-server --port=50000 --browser=chrome --cors --open=./dist/about.html\""
+  
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "simple-json-db": "^2.0.0"
+  }
+}
